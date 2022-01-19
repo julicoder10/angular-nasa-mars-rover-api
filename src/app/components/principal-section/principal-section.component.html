@@ -1,0 +1,17 @@
+
+<nav>
+    <div class="navbar-brand">
+        <h1>NASA MARS PHOTOS API REST</h1>
+    </div>
+    <div>
+        <a href="https://github.com/julicoder10" class="github-button">Github</a>
+    </div>
+</nav>
+<section>
+    
+    <div *ngFor="let foto of photos" class="card">
+        <img src="{{this.foto.img_src}}">
+        <h3>Soles: {{this.foto.id}}</h3>
+        <h3>Earth Date: {{this.foto.earth_date}}</h3>
+    </div>
+</section>
